@@ -1,0 +1,7 @@
+<div>
+  <h2>Compression Page</h2>
+  <input type="file" multiple (change)="onFileChange($event)">
+  <button (click)="compressAndUpload()">Compress and Upload Files</button>
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>
